@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "163c94a955a9c68b07a07d64efc0940d",
+    "content-hash": "eca3e44d245f08df4c4dbb3c65d16def",
     "packages": [
         {
             "name": "aura/intl",
@@ -287,6 +287,45 @@
             ],
             "description": "A composer installer for CakePHP 3.0+ plugins.",
             "time": "2017-03-21T13:48:47+00:00"
+        },
+        {
+            "name": "itosho/idol-ec-constants-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itosho/idol-ec-constants-php.git",
+                "reference": "ed7a0b75bf0ad026aee0f0510facd36d151dcb9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itosho/idol-ec-constants-php/zipball/ed7a0b75bf0ad026aee0f0510facd36d151dcb9b",
+                "reference": "ed7a0b75bf0ad026aee0f0510facd36d151dcb9b",
+                "shasum": ""
+            },
+            "require": {
+                "yosymfony/toml": "^0.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Itosho\\IdolEcConstantsPhp\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Itosho\\IdolEcConstantsPhp\\Test\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "itosho"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/itosho/idol-ec-constants-php/tree/master",
+                "issues": "https://github.com/itosho/idol-ec-constants-php/issues"
+            },
+            "time": "2017-10-22T04:16:51+00:00"
         },
         {
             "name": "josegonzalez/dotenv",
@@ -961,6 +1000,54 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2017-10-05T14:43:42+00:00"
+        },
+        {
+            "name": "yosymfony/toml",
+            "version": "v0.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosymfony/Toml.git",
+                "reference": "b0a28913e488389b6a088c2893c83037d80ec020"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosymfony/Toml/zipball/b0a28913e488389b6a088c2893c83037d80ec020",
+                "reference": "b0a28913e488389b6a088c2893c83037d80ec020",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yosymfony\\Toml\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Victor Puertas",
+                    "email": "vpgugr@gmail.com",
+                    "homepage": "http://yosymfony.com"
+                }
+            ],
+            "description": "A PHP parser for TOML compatible with specification 0.4.0",
+            "homepage": "http://github.com/yosymfony/toml",
+            "keywords": [
+                "mojombo",
+                "parser",
+                "toml"
+            ],
+            "time": "2015-08-24T20:56:47+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -2149,6 +2236,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "itosho/idol-ec-constants-php": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,

@@ -18,6 +18,7 @@ use Cake\Core\Configure;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
+use Itosho\IdolEcConstantsPhp\ConstantsDictionary;
 
 /**
  * Static content controller
@@ -40,6 +41,11 @@ class PagesController extends AppController
      */
     public function display(...$path)
     {
+        // $dictionary = new ConstantsDictionary();
+        // $constants = $dictionary->getAll();
+        // print_r($constants);
+        // exit();
+
         $count = count($path);
         if (!$count) {
             return $this->redirect('/');
